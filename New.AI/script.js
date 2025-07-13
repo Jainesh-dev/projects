@@ -177,8 +177,8 @@ document.addEventListener('DOMContentLoaded', () => {
      */
     async function generateAiResponse() {
         // Use the API key provided by the user in the previous conversation.
-        const apiKey = "AIzaSyAvp5ZNw-U2FTjSvuBWqhL0v-4zUp8vkk8";
-        const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
+        const apiKey = "";
+        const apiUrl = ``;
 
         const payload = { contents: chatHistory };
 
