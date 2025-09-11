@@ -1,0 +1,232 @@
+/*
+  resume-styles.css
+  Modern theme for the Resume page, consistent with the main portfolio.
+  Version 2.3 – Final Tweaked & Gap-Free
+*/
+
+/* =================== Container =================== */
+.resume-container {
+  max-width: 950px;
+  margin: 5rem auto;
+  padding: 2.5rem;
+  background: var(--background-card);
+  border: 1px solid var(--border-color);
+  border-radius: 1rem;
+  box-shadow: var(--shadow-card);
+}
+
+/* =================== Header =================== */
+.resume-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 2rem;
+  gap: 2rem;
+}
+
+.resume-profile-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--primary-color);
+  box-shadow: 0 0 20px rgba(0, 212, 170, 0.25);
+}
+
+.header-text {
+  flex-grow: 1;
+}
+
+.resume-header h2 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  line-height: 1.2;
+}
+
+.resume-header .tagline {
+  font-size: 1.1rem;
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+.download-btn {
+  white-space: nowrap;
+  margin-top: 0.25rem;
+}
+
+/* =================== Layout =================== */
+.resume-body {
+  display: grid;
+  grid-template-columns: 30% 1fr;
+  gap: 2rem;
+}
+
+/* =================== Section Styling =================== */
+.resume-section {
+  margin-bottom: 0.6rem;
+  padding-bottom: 0 !important;
+}
+
+.resume-sidebar .resume-section:last-child,
+.resume-main-content .resume-section:last-child {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.resume-section > *:last-child {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.resume-section h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.resume-main-content .resume-section h3 {
+  color: var(--text-primary);
+}
+
+/* =================== Typography =================== */
+.sub-text {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.4;
+  margin-top: 0.1rem;
+  margin-bottom: 0.4rem;
+}
+
+.resume-section p,
+.resume-section h4 {
+  margin: 0.2rem 0 0.4rem 0;
+}
+
+/* =================== Lists =================== */
+.contact-list,
+.skills-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-list li,
+.skills-list li {
+  margin-bottom: 0.4rem;
+  color: var(--text-secondary);
+}
+
+.contact-list li strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+/* =================== Skills Badge =================== */
+.skills-list li {
+  background: rgba(0, 212, 170, 0.1);
+  color: var(--primary-color);
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  display: inline-block;
+  margin-right: 0.5rem;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* =================== Projects =================== */
+.project-item {
+  margin-bottom: 0.6rem;
+}
+
+.project-item:last-child {
+  margin-bottom: 0;
+}
+
+.resume-main-content > .resume-section > p {
+  margin-bottom: 0.6rem;
+}
+
+/* =================== Responsive =================== */
+@media (max-width: 768px) {
+  .resume-container {
+    margin-top: 5rem;
+    padding: 1.5rem;
+  }
+
+  .resume-body {
+    grid-template-columns: 1fr;
+  }
+
+  .resume-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+/* =================== Print =================== */
+@media print {
+  nav,
+  footer,
+  .download-btn,
+  .resume-profile-photo {
+    display: none !important;
+  }
+
+  body {
+    background: #fff !important;
+    color: #000 !important;
+    font-family: 'Times New Roman', serif;
+  }
+
+  .resume-container {
+    box-shadow: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+  }
+
+  .resume-header h2 {
+    color: #000;
+  }
+
+  .resume-header .tagline,
+  .resume-section h3,
+  .contact-list a {
+    color: #333;
+  }
+
+  .resume-section h3 {
+    border-color: #ccc;
+  }
+
+  .skills-list li {
+    background: #eee;
+    color: #000;
+    border: 1px solid #ccc;
+  }
+
+  .resume-body {
+    display: block;
+  }
+
+  a {
+    color: #000 !important;
+    text-decoration: underline !important;
+  }
+}
+.resume-profile-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--primary-color);
+  box-shadow: 0 0 20px rgba(0, 212, 170, 0.25);
+}

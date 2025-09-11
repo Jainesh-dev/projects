@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Jainesh Patel - Resume</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="resume.css"/> 
+</head>
+<body>
+
+    <nav>
+        <div class="nav-container">
+            <h1>Jainesh Patel</h1>
+            <ul>
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="resume.html">Resume</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="resume-container">
+        <header class="resume-header">
+            <img src="images/resume-profile.jpg" alt="Jainesh Patel" class="resume-profile-photo">
+
+            <div class="header-text">
+                <h2>Jainesh Patel</h2>
+                <p class="tagline">Aspiring AI Engineer | Web Developer | Electronics Enthusiast</p>
+            </div>
+            <a href=".vscode/Jainesh Patel.pdf" download class="btn primary download-btn">Download PDF</a>
+        </header>
+
+        <div class="resume-body">
+            <aside class="resume-sidebar">
+                <section class="resume-section">
+                    <h3>Contact</h3>
+                    <ul class="contact-list">
+                        <li><strong>Email:</strong> jaineshsmail77@gmail.com</li>
+                        <li><strong>Phone:</strong> +91 80807 32249</li>
+                        <li><strong>Location:</strong> Mumbai, India</li>
+                        <li><strong>GitHub:</strong> <a href="https://github.com/Jainesh-dev" target="_blank">Jainesh-dev</a></li>
+                    </ul>
+                </section>
+
+                <section class="resume-section">
+                    <h3>Technical Skills</h3>
+                    <ul class="skills-list">
+                        <li>C / C++</li>
+                        <li>Java</li>
+                        <li>HTML, CSS, JavaScript</li>
+                        <li>AI & Chatbot Development</li>
+                        <li>Embedded Systems</li>
+                        <li>Backend (Learning)</li>
+                    </ul>
+                </section>
+            </aside>
+
+            <div class="resume-main-content">
+                <section class="resume-section">
+                    <h3>Professional Summary</h3>
+                    <p>A highly motivated second-year Electronics Engineering student with a strong passion for technology, particularly in the fields of Artificial Intelligence and Web Development. Eager to apply my foundational knowledge in programming and electronics to solve real-world problems and contribute to innovative projects. A quick learner with hands-on project experience in chatbot development and automation.</p>
+                </section>
+
+                <section class="resume-section">
+                    <h3>Projects</h3>
+                    <article class="project-item">
+                        <h4>AI Chatbot</h4>
+                        <p class="sub-text">Developed a conversational AI using vanilla JavaScript to handle user queries and provide automated responses, focusing on natural language understanding and a clean user interface.</p>
+                    </article>
+                    <article class="project-item">
+                        <h4>Developer Portfolio Website</h4>
+                        <p class="sub-text">Designed and built a responsive personal portfolio website from scratch to showcase my skills and projects, using modern HTML, CSS, and JavaScript.</p>
+                    </article>
+                    <article class="project-item">
+                        <h4>Embedded Systems Automation</h4>
+                        <p class="sub-text">Created a microcontroller-based automation system for a home environment, involving C programming, circuit design, and sensor integration.</p>
+                    </article>
+                </section>
+
+                <section class="resume-section">
+                    <h3>Education</h3>
+                    <p><strong>Bachelor of Engineering, Electronics</strong></p>
+                    <p class="sub-text">University of Mumbai</p>
+                    <p class="sub-text">Expected Graduation: 2027</p>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; <span id="copyright-year">2025</span> Jainesh Patel. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('copyright-year').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>
